@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class List{
+    main()
+    start()
+}
+
+class ListController{
+
+
+    loadClicked()
+    saveClicked()
+    addClicked()
+    removeClicked()
+    newListClicked()
+
+}
+
+
+javafx.Application <|-- List
+
+List - ListController
+@enduml
