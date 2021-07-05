@@ -25,4 +25,4 @@ javafx {
     modules = [ 'javafx.controls' , 'javafx.fxml' ]
 }
 
-mainClassName = 'ucf.assignments.ToDo'
+mainClassName = 'ucf.assignments.List'

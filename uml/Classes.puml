@@ -1,4 +1,5 @@
 @startuml
+
 'https://plantuml.com/class-diagram
 
 class List{
@@ -8,17 +9,30 @@ class List{
 
 class ListController{
 
+    -tableView : TableView
+    -title: TextField
 
-    loadClicked()
-    saveClicked()
-    addClicked()
-    removeClicked()
-    newListClicked()
-
+    + loadClicked()
+    + saveClicked()
+    + addItemClicked()
+    + addListClicked()
+    + removeItemClicked()
+    + removeListClicked()
+    + incompletedClicked()
+    + completedClicked()
+    + loadList()
+    + saveList()
+    + addItem()
+    + addList()
+    + removeItem()
+    + removeList()
+    + displayIncompleteItems()
+    + displayCompleteItems()
 }
 
 
 javafx.Application <|-- List
 
 List - ListController
+
 @enduml

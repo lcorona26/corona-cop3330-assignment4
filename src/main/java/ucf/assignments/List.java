@@ -17,12 +17,12 @@ public class List extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("ToDo.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("List.fxml"));
 
             Scene scene = new Scene(root);
 
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Calculator");
+            primaryStage.setTitle("List");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
